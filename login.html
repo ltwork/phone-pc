@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入JQ -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- 表单验证插件 -->
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+    <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+    <!-- 图表插件 -->
+    <script src="./lib/echarts/echarts.min.js"></script>
+
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- js -->
+    <!-- <script src="./js/common.js"></script> -->
+    <script src="./js/login.js"></script>
+
+</head>
+
+<body>
+    <div class="container" action="">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4>后台管理系统</h4>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="username" class="col-sm-3 control-label">用户名</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="username" class="form-control" id="username" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3"  class="col-sm-3 control-label">密码</label>
+                        <div class="col-sm-9">
+                            <!-- 加name才能被提交 -->
+                            <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-3">
+                            <button type="button" class="btn btn-default reset">重置</button>
+                        </div>
+                        <div class="col-sm-offset-2 col-sm-3">
+                            <!-- 改为button form里面的submit会自动提交到当前页面 -->
+                            <button type="button" class="btn btn-primary submit">登陆</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

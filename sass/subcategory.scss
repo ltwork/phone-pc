@@ -1,0 +1,25 @@
+@import "./common.scss";
+
+
+.main {
+    .right {
+        .datalist {
+            padding: 0px 50px;
+            >.btn-default {
+                margin-bottom: 20px;
+            }
+            table {
+                td,
+                th {
+                    text-align: center;
+                    vertical-align: middle;
+                }
+                //kongzhi tupian
+                img {
+                    display: inline-block;
+                    width: 60px;
+                }
+            }
+        }
+    }
+}

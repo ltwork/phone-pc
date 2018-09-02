@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html {
+    width: 100%;
+    height: 100%;
+}
+img {
+    display: block;
+}
+ol,ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+//页面
+
+
+html,body {
+    height: 100%;
+}
+.main {
+    position: relative;
+    height: 100%;
+    padding-left: 180px;
+    transition: all 1s;
+    &.active {
+        padding-left: 0px;
+    }
+    .left {
+        position: absolute;
+        left: 4px;
+        top: 0px;
+        width: 180px;
+        height: 100%;
+        background-color: #222d32;
+        transition: all 1s;
+        
+        &.active {
+            left: -180px;
+        }
+        >.bar {
+            height: 50px;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            background-color: #367fa9;     
+            font-size: 20px;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        // 左下内容
+        >.content {
+            img {
+                width: 80px;
+                margin-top: 30px;
+            }
+            p {
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .menu,.submenu {
+                
+                a {
+                    display: flex;
+                    height: 40px;
+                    color: #fff;
+                    text-decoration: none;
+                    padding-left: 40px;
+                    align-items: center;
+                    &.active {
+                        background-color: #1d1f21; //huasanjiao biankuang
+                        border-left: 3px solid red;
+                        border-top: 3px solid transparent;
+                        border-bottom: 3px solid transparent;
+                    }
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .submenu {
+                a {
+                    padding-left: 60px;
+                }
+               
+            }
+        }
+
+
+    }
+    // 右边内容
+    .right {
+        width: 100%;
+        height: 100%;
+        
+        .bar {
+            background-color: #3c8dbc;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 15px;
+            a {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            ol {
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    
+                   
+                }
+            }
+            .charts {
+                .bar,.pipe {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+// 模态框
+.modal {
+   //margin-top: 100px;
+    p {
+        color: red;
+        .glyphicon-info-sign {
+            margin-right: 10px;
+        }
+    }
+}
+
+#addcategory {
+    .form-group {
+        margin-bottom: 0px;
+    }
+}
+#addsubcategory {
+    .form-group {
+        margin-bottom: 10px;
+    }
+    .filediv {
+        margin-top: 10px;
+        position: relative;
+        .btn-default {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 30px;
+        }
+        .fileinput {
+            
+            height: 30px;
+            opacity : 0;
+        }
+    }
+}
+#addproductmodal {
+    .form-group {
+        margin-bottom: 10px;
+    }
+    .filediv {
+        margin-top: 10px;
+        position: relative;
+        .btn-default {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 30px;
+        }
+        .fileinput {
+            
+            height: 30px;
+            opacity : 0;
+        }
+    }
+}

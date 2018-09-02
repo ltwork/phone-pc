@@ -1,0 +1,19 @@
+@import "./common.scss";
+body {
+    background-color: #222d32;
+}
+.container {
+    width: 400px;
+    margin-top: 150px;
+    .panel {
+        border: none;
+        .panel-heading {
+            width: 100%;
+            h4 {
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+    
+}

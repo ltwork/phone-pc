@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+  padding-left: 180px;
+  transition: all 1s;
+}
+.main.active {
+  padding-left: 0px;
+}
+.main .left {
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  transition: all 1s;
+}
+.main .left.active {
+  left: -180px;
+}
+.main .left > .bar {
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  background-color: #367fa9;
+  font-size: 20px;
+}
+.main .left > .bar a {
+  color: #fff;
+  text-decoration: none;
+}
+.main .left > .content img {
+  width: 80px;
+  margin-top: 30px;
+}
+.main .left > .content p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main .left > .content .menu a, .main .left > .content .submenu a {
+  display: flex;
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 40px;
+  align-items: center;
+}
+.main .left > .content .menu a.active, .main .left > .content .submenu a.active {
+  background-color: #1d1f21;
+  border-left: 3px solid red;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.main .left > .content .menu a span, .main .left > .content .submenu a span {
+  margin-right: 10px;
+}
+.main .left > .content .submenu a {
+  padding-left: 60px;
+}
+.main .right {
+  width: 100%;
+  height: 100%;
+}
+.main .right .bar {
+  background-color: #3c8dbc;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+.main .right .bar a {
+  color: #fff;
+  font-size: 20px;
+}
+.main .right .content {
+  background-color: #fff;
+  padding: 20px;
+}
+.main .right .content ol a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.main .right .content .charts .bar, .main .right .content .charts .pipe {
+  height: 300px;
+}
+
+.modal p {
+  color: red;
+}
+.modal p .glyphicon-info-sign {
+  margin-right: 10px;
+}
+
+#addcategory .form-group {
+  margin-bottom: 0px;
+}
+
+#addsubcategory .form-group {
+  margin-bottom: 10px;
+}
+#addsubcategory .filediv {
+  margin-top: 10px;
+  position: relative;
+}
+#addsubcategory .filediv .btn-default {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 30px;
+}
+#addsubcategory .filediv .fileinput {
+  height: 30px;
+  opacity: 0;
+}
+
+#addproductmodal .form-group {
+  margin-bottom: 10px;
+}
+#addproductmodal .filediv {
+  margin-top: 10px;
+  position: relative;
+}
+#addproductmodal .filediv .btn-default {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 30px;
+}
+#addproductmodal .filediv .fileinput {
+  height: 30px;
+  opacity: 0;
+}
+
+.main .right .datalist {
+  padding: 0px 50px;
+}
+.main .right .datalist > .btn-default {
+  margin-bottom: 20px;
+}
+.main .right .datalist table td,
+.main .right .datalist table th {
+  text-align: center;
+  vertical-align: middle;
+}
+.main .right .datalist table img {
+  display: inline-block;
+  width: 60px;
+}
+
+/*# sourceMappingURL=category.css.map */

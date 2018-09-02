@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/echarts/echarts.min.js"></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!-- 左侧列表 -->
+        <div class="left">
+            <!-- 底部条 -->
+            <div class="bar"><a href="./index.html">乐淘首页</a></div>
+
+            <!-- 头像，名字，菜单 -->
+            <div class="content">
+                <!-- 头像 img-circle:bootstrap提供的图片圆角 center-block:bootstrap提供的  让内容块居中-->
+                <img src="./images/default.png" alt="" class="icon img-circle center-block">
+                <!-- 名字 -->
+                <p class="role center-block text-center">超级管理员</p>
+
+                <!-- 菜单 -->
+                <ul class="menu">
+                    <li ><a class="active" href="./user.html"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
+                    <li>
+                        <a class="togglesubmenu"><span class="glyphicon glyphicon-list"></span>分类管理</a>
+                        <ul class="submenu">
+                                <li><a href="./category.html">一级分类</a></li>
+                                <li>
+                                    <a href="./subcategory.html">二级分类</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li><a href="./good.html"><span class="glyphicon glyphicon-tags"></span>商品管理</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 右侧内容 -->
+        <div class="right">
+            <div class="bar">
+                <a class="toggle pull-left"><span class="glyphicon glyphicon-align-justify
+                    "></span></a>
+                <a class="logout pull-right">
+                    <span class="glyphicon glyphicon-share
+                    "></span>
+                </a>
+            </div>
+            <div class="content">
+                <!-- 面包屑导航 -->
+                <ol class="breadcrumb">
+                    <li><a href="#">管理系统</a></li>
+                    <li class="active">首页</li>
+                </ol>
+
+                <!-- 图表 -->
+                <div class="charts">
+                    <div class="bar col-md-6"></div>
+                    <div class="pipe col-md-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注销的模态框 从bootstrap官网模态框组件 拉取-->
+    <div class="modal fade" id="logoutmodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <!-- 模态框头部显示信息 -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">温馨提示</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- span里面是字体图标 -->
+              <p class="text-danger"><span class="glyphicon glyphicon-info-sign
+                "></span>您确要退出登录吗?</p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary confirmlogout">确认</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
